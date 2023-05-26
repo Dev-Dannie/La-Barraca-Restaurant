@@ -1,0 +1,23 @@
+.contact{
+    padding: var(--section-padding);
+    height: auto;
+    width: 100%;
+}
+.contact .contact-header{
+    margin-bottom: 30px;
+}
+
+.contact .contact-center{
+    display: flex;
+    gap: 30px;
+}
+
+.contact-details img{
+    width: 30px;
+}
+
+.contact-center-div2{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}

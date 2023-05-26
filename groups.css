@@ -1,0 +1,30 @@
+.groups{
+    padding: var(--section-padding);
+    height: auto;
+}
+.groups .groups-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.groups .groups-cards{
+    display: flex;
+    gap: 100px;
+}
+
+.groups .groups-cards .card1{
+    border: solid 1px black;
+    padding: 30px;
+    height: 500px;
+}
+
+.groups .groups-cards .card1 .card1-flex{
+    display: flex;
+    gap: 20px;
+}
+
+.groups .groups-cards .card2{
+    border: solid 1px black;
+    padding: 30px;
+    height: 350px;
+}
