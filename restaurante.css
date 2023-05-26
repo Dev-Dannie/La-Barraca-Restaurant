@@ -24,18 +24,52 @@ body{
     /* filter: drop shadow(0.6); */
 }
 
-.nav{
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    padding: 30px;
+    border-bottom: solid 1px black;
+}
+
+
+.navbar .nav-logo{
+    /* display: flex; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+    align-items: center;
+}
+
+.navbar .nav-logo img{
+    height: 30px;
+}
+
+
+.navbar .nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 nav ul{
-    display: flex;
+    /* display: flex; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li{
-    padding-left: 20px;
-    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+   
 }
 
 nav ul li a{
@@ -46,7 +80,24 @@ nav ul li a{
     font-weight: bold;
 }
 
+.navbar.scrolled{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.navbar.scrolled .nav-logo{
+    visibility: visible;
+}
+
+.navbar.scrolled ul li a{
+    color: black;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 
 .hero-content{
     display: flex;
@@ -119,217 +170,5 @@ nav ul li a{
     /* right: 5%; */
 }
 
-.video-container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.video-container video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-container .video-content{
-    position: relative;
-    z-index: 1;
-}
-
-.reviews{
-    padding: var(--section-padding);
-    height: auto;
-}
-
-.reviews-header{
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.reviews h3{
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.reviews-cards{
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
-    gap: 30px;
-    width: 100%;
-}
-
-.reviews-cards .card{
-    border: solid 1px black;
-    padding: 30px;
-}
-
-.reviews-cards .card .num{
-    background-color: black;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.2rem;
-}
-
-.menu{
-    height: auto;
-    padding: var(--section-padding);
-    background-color: rgb(254, 218, 224);
-}
-
-.menu-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   width: 100%;
-    margin-bottom: 50px;
-}
-
-.menu-header p{
-    text-align: center;
-}
-
-.menu .menu-filter .filter-content{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.menu .menu-filter .filter-content .name{
-    padding: 0 30px;
-}
-
-.menu-main-content{
-    margin: 40px 0;
-}
-
-.menu-main-content-some{
-    display: flex;
-    align-items: center;
-}
-
-.menu-main-content-nuevo{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-.menu-main-content-h4{
-    display: inline-block;
-    position: relative;
-    margin-left: 20px;
-    font-size: 2rem;
-}
-
-.menu-main-content-h4::after{
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 110%;
-    width: 700px;
-    height: 1px;
-    background-color: black;
-}
-
-.groups{
-    padding: var(--section-padding);
-    height: auto;
-}
-.groups .groups-header{
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.groups .groups-cards{
-    display: flex;
-    gap: 100px;
-}
-
-.groups .groups-cards .card1{
-    border: solid 1px black;
-    padding: 30px;
-    height: 500px;
-}
-
-.groups .groups-cards .card1 .card1-flex{
-    display: flex;
-    gap: 20px;
-}
-
-.groups .groups-cards .card2{
-    border: solid 1px black;
-    padding: 30px;
-    height: 350px;
-}
-
-.questions{
-    padding: var(--section-padding);
-    height: auto;
-    width: 100%;
-}
-.questions .questions-header{
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.questions .questions-center{
-    /* display: flex;
-    justify-content: center;
-    text-align: center; */
-    width: 100%;
-    margin: 0 auto;
-    max-width: 700px;
-}
-
-.questions-center .single-questions{
-    border: solid 1px black;
-    padding: 20px;
-}
-
-.single-questions .head{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.single-questions .head img{
-    width: 20px;
-}
-
-.questions .questions-bottom{
-    text-align: center;
-}
 
 
-.contact{
-    padding: var(--section-padding);
-    height: auto;
-    width: 100%;
-}
-.contact .contact-header{
-    margin-bottom: 30px;
-}
-
-.contact .contact-center{
-    display: flex;
-    gap: 30px;
-}
-
-.contact-details img{
-    width: 30px;
-}
-
-.contact-center-div2{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-}

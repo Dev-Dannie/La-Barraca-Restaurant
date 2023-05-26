@@ -1,0 +1,27 @@
+footer{
+    padding: var(--section-padding);
+}
+
+.footer-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.footer-details .nav ul{
+    display: flex;
+}
+
+.footer-details .socials{
+    display: flex;
+}
+
+.footer-details .socials img{
+    width: 30px;
+}
+
+footer .copy{
+    padding: 40px 0 70px 0;
+    text-align: center;
+}
+
