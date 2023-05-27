@@ -9,21 +9,42 @@
 }
 
 .reviews h3{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.reviews h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.reviews p{
+    font-size: 1.1rem;
 }
 
 .reviews-cards{
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    gap: 30px;
+    grid-auto-rows: min-content;
+    gap: 30px; 
     width: 100%;
+    padding-top: 50px;
 }
 
 .reviews-cards .card{
     border: solid 1px black;
-    padding: 30px;
+    padding: 40px;
+    height: fit-content;
+    margin: 0;
+}
+
+.reviews-cards .card:nth-child(2){
+}
+
+.reviews-cards .card:nth-child(6){
+    /* grid-row: span 2; */
 }
 
 .reviews-cards .card .num{
@@ -35,5 +56,10 @@
     text-align: center;
     line-height: 50px;
     font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.reviews-cards .card .card-p{
+    margin-bottom: 30px;
 }
 

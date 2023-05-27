@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="reviews.css">
 </head>
 <body>
-    <section class="hero">
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
         <div class="navbar">
             <div class="nav">
             <nav>
                 <ul>
+                    <li><a href="#hero">home</a></li>
                     <li><a href="#about-page">about</a></li>
                     <li><a href="#menu">menu</a></li>
                     <li><a href="#groups">groups</a></li>
@@ -39,19 +41,21 @@
 
         <div class="hero-content">
             <div class="hero-img">
-                <img src="./forkNknife.svg" alt="">
+                <img src="./forkNknife.svg" alt="" loading="lazy">
             </div>
             <a href="">view menu</a>
         </div>
+        
     </section>
+    
     <section id="about-page" class="about-page">
-        <div class="-page-img">
+        <div class="about-page-img">
             <div class="image-background">
-                <img src="labarraca2.jpeg" alt="">
+                <img src="labarraca2.jpeg" alt="" loading="lazy">
             </div>
             
         </div>
-        <div class="-page-text">
+        <div class="about-page-text">
             <h1>La Barraca?</h1>
             <h4>Que es esto? Making fresh Mediterranean tapas for you is our greatest passion. 
                 We were especially inspired by the Spanish tapa.
@@ -66,11 +70,11 @@
         </div>
     </section>
     <div class="video-container">
-        <video autoplay loop>
+        <video autoplay loop muted>
             <source src="./burger.mp4" type="video/mp4">
         </video>
         <div class="video-content">
-            <p>menu</p>
+            <h6>menu</h6>
             <h1>que tapas hoy?</h1>
             <p>Would you like to preview our menu? Then click on the button below.</p>
             <div class="video-btn">
@@ -82,88 +86,96 @@
 
     <div class="reviews">
         <div class="reviews-header">
-            <h3>reiviews</h3>
+            <h3>reviews</h3>
             <h1>Buenas palabras</h1>
             <p>We do everything we can to provide the best experience 
-                and we are more than happy to share your good ones :)</p>
+                and we are more than happy to share <br> your good ones :)</p>
         </div>
 
         <div class="reviews-cards">
             <div class="card">
                 <div class="num">10</div>
-                <p>
+                <p class="card-p">
                     Super spontaneous reception by the staff, 
                     it really gave a warm and welcome feeling. 
                     Good service and delicious dishes, we could hardly choose. 
                     In short, we will definitely come back here more often!
                 </p>
                 <h3>ralf</h3>
+                <p>Formitable</p>
             </div>
 
             <div class="card">
                 <div class="num">10</div>
-                <p>
-                    Super spontaneous reception by the staff, 
-                    it really gave a warm and welcome feeling. 
-                    Good service and delicious dishes, we could hardly choose. 
-                    In short, we will definitely come back here more often!
+                <p class="card-p">
+                    Best tapas in town At this moment by far the best tapas in town! I have ordered here 
+                    before during the lockdown and now I eat here in the restaurant itself for the first time. 
+                    It is just super tasty. Quality is excellent! Staff is friendly, some speak English, no problem for us,
+                     but what is often the case in tapas restaurants that you have a well-filled wallet to take along.
+                     That is not only here, but you do get value for money! Everything is equally delicious!
                 </p>
                 <h3>ralf</h3>
+                <p>Formitable</p>
             </div>
 
             <div class="card">
                 <div class="num">10</div>
-                <p>
+                <p class="card-p">
                     Super spontaneous reception by the staff, 
                     it really gave a warm and welcome feeling. 
                     Good service and delicious dishes, we could hardly choose. 
                     In short, we will definitely come back here more often!
                 </p>
                 <h3>ralf</h3>
+                <p>Formitable</p>
             </div>
 
             <div class="card">
                 <div class="num">10</div>
-                <p>
+                <p class="card-p">
                     Super spontaneous reception by the staff, 
                     it really gave a warm and welcome feeling. 
                     Good service and delicious dishes, we could hardly choose. 
                     In short, we will definitely come back here more often!
                 </p>
                 <h3>ralf</h3>
+                <p>Formitable</p>
             </div>
 
             <div class="card">
                 <div class="num">10</div>
-                <p>
+                <p class="card-p">
                     Super spontaneous reception by the staff, 
                     it really gave a warm and welcome feeling. 
                     Good service and delicious dishes, we could hardly choose. 
                     In short, we will definitely come back here more often!
                 </p>
                 <h3>ralf</h3>
+                <p>Formitable</p>
             </div>
 
             <div class="card">
                 <div class="num">10</div>
-                <p>
+                <p class="card-p">
                     Super spontaneous reception by the staff, 
                     it really gave a warm and welcome feeling. 
                     Good service and delicious dishes, we could hardly choose. 
                     In short, we will definitely come back here more often!
                 </p>
                 <h3>ralf</h3>
+                <p>Formitable</p>
             </div>
 
             <div class="card">
                 <div class="num">10</div>
-                <p>
+                <p class="card-p">
                     Super spontaneous reception by the staff, 
                     it really gave a warm and welcome feeling. 
                     Good service and delicious dishes, we could hardly choose. 
                     In short, we will definitely come back here more often!
                 </p>
                 <h3>ralf</h3>
+                <p>Formitable</p>
             </div>
         </div>
     </div>
@@ -182,23 +194,39 @@
         <div class="menu-content">
             <div class="menu-filter">
                 <div class="filter-content">
-                    <span></span><span class="name">bread</span>
+                    <!-- <label>
+                        <input type="radio" name="category" value="all">
+                        All
+                    </label> -->
+                    <label>
+                        <input type="radio" name="category" value="Bread">
+                        Bread
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="Vegetables + Cheese">
+                        Vegetables + Cheese
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="Fish">
+                        Fish
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="Meat">
+                        Meat
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="Dessert">
+                        Dessert
+                    </label>
+                    <!-- <span></span><span class="name">bread</span>
                     <span></span><span class="name">vegetables + cheese</span>
                     <span></span><span class="name">fish</span>
                     <span></span><span class="name">meat</span>
-                    <span></span><span class="name">dessert</span>
+                    <span></span><span class="name">dessert</span> -->
                 </div>
 
                 <div class="menu-main">
-                    <div class="menu-main-content">
-                        <div class="menu-main-content-some">
-                        <div class="menu-main-content-nuevo">
-                            <p>nuevo</p>
-                            <h4 class="menu-main-content-h4">Croquetas caseras de paella</h4>    
-                        </div>
-                        <span>8</span>
-                    </div>
-                           <p>Handmade paella croquettes with meat and fish</p>     
+                         
                     </div>
 
                     <div class="menu-main-content">
@@ -442,4 +470,5 @@
     </footer>
 </body>
 <script src="restaurante.js"></script>
+<script src="menu.js"></script>
 </html>
