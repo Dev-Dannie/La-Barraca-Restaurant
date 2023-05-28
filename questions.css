@@ -35,3 +35,23 @@
 .questions .questions-bottom{
     text-align: center;
 }
+
+.question-body{
+    display: none;
+}
+
+.show-text .question-body{
+    display: block;
+}
+
+.close-btn{
+    display: none;
+}
+
+.show-text .close-btn{
+    display: inline;
+}
+
+.show-text .plus-btn{
+    display: none;
+}

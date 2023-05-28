@@ -4,18 +4,21 @@ const menuItemsData = [
         digit: 8,
         description: 'Handmade paella croquettes with meat and fish',
         category: 'Meat',
+        tag: 'Nuevo'
     },
     {
         name: 'Pinchitos con roquefort',
         digit: 9.25,
         description: '2 tenderloin skewers with roquefort sauce',
         category: 'Meat',
+        tag: 'Nuevo'
     },
     {
         name: 'Helado de naranja',
         digit: 8.5,
         description: '3 scoops of ice cream with orange',
         category: 'Dessert',
+        tag: 'Nuevo'
     },
     {
         name: 'Pan de ajo',
@@ -154,7 +157,7 @@ function populateMenuItems(menuItemsData) {
         menuItem.innerHTML = `
                                 <div class="menu-main-content-some">
                                 <div class="menu-main-content-nuevo">
-                                    <p>nuevo</p>
+                                    <p>${item.tag ? item.tag : ''}</p>
                                     <h4 class="menu-main-content-h4">${item.name}</h4>    
                                 </div>
                                 <span>${item.digit}</span>

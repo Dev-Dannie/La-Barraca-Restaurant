@@ -13,12 +13,27 @@
     margin-bottom: 50px;
 }
 
-.menu-header p{
-    text-align: center;
+.menu-header h3{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
+.menu-header h1{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-header p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+
 .menu .menu-filter .filter-content{
-    margin-bottom: 30px;
+    margin: 40px 0;
     display: flex;
     justify-content: center;
 }
@@ -40,23 +55,29 @@
     display: flex;
     width: 100%;
     align-items: center;
+    gap: 10px;
+}
+
+.nuevo{
+    margin-right: 10px;
 }
 
 .menu-main-content-h4{
     display: inline-block;
     position: relative;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 2rem;
 }
 
 .menu-main-content-h4::after{
     content: '';
     position: absolute;
-    bottom: 8px;
+    top: 50%;
     left: 110%;
     width: 700px;
     height: 1px;
     background-color: black;
+
 }
 
 
