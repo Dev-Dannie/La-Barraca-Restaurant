@@ -5,15 +5,34 @@ footer{
 .footer-details{
     display: flex;
     justify-content: space-between;
-    padding: 70px 0;
+    padding: 70px 0 50px;
+    align-items: center;
+}
+
+.footer-details img{
+    width: 200px;
 }
 
 .footer-details .nav ul{
     display: flex;
+    gap: 20px;
+}
+
+.footer-details .nav ul li{
+    list-style: none;
+    /* padding: 0 20px; */
+}
+
+.footer-details .nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .footer-details .socials{
     display: flex;
+    gap: 20px;
 }
 
 .footer-details .socials img{
@@ -21,7 +40,9 @@ footer{
 }
 
 footer .copy{
-    padding: 40px 0 70px 0;
+    padding: 40px 0 10px;
     text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }
 

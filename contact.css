@@ -4,12 +4,34 @@
     width: 100%;
 }
 .contact .contact-header{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.contact-header h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-header .para{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header .subhead{
+    font-size: 1.1rem;
 }
 
 .contact .contact-center{
     display: flex;
-    gap: 30px;
+    gap: 80px;
 }
 
 .contact-details img{
@@ -18,6 +40,109 @@
 
 .contact-center-div2{
     display: grid;
+    right: 20px;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+form .form-bio{
+    display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
+    margin-bottom: 30px;
+}
+
+.error-text{
+    font-size: 12px;
+    color: red;
+}
+
+.form-bio > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-bio > div > label{
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.form-bio > div > input{
+    height: 3rem;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.selection label{
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.selection select{
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.message label{
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.message textarea{
+    font-size: 0.9rem;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+form .radio-btn{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+form .radio-btn label{
+    font-size: 12px;
+}
+
+form button{
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    border: solid 1px black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-center-div2 .contact-details h4{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.contact-center-div2 .contact-details p{
+    text-transform: capitalize;
+}
+
+.contact-center-div2 .contact-details h6{
+    font-size: 15px;
 }

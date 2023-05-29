@@ -158,11 +158,17 @@ nav ul li a{
 .hero-content a {
     padding: 15px 25px;
     background-color: black;
+    border: solid 2px black;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all .4s;
+}
+
+.hero-content a:hover{
+    background-color: transparent;
 }
 
 .booking h4{

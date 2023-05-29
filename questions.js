@@ -1,6 +1,5 @@
-const plusBtn = document.querySelectorAll('.plus-btn')
-const closeBtn = document.querySelectorAll('.close-btn')
 const questionBtn = document.querySelectorAll('.question-btn')
+let previousButtonClicked = null
 
 questionBtn.forEach((question) => {
     question.addEventListener('click', (e) => {

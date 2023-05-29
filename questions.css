@@ -8,6 +8,23 @@
     margin-bottom: 30px;
 }
 
+.questions-header h3{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.questions-header h1{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.questions-header p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
 .questions .questions-center{
     /* display: flex;
     justify-content: center;
@@ -25,7 +42,17 @@
 .single-questions .head{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
+}
+
+.single-questions .head .title{
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.single-questions .head button{
+    background: none;
+    border: none;
 }
 
 .single-questions .head img{
@@ -33,11 +60,40 @@
 }
 
 .questions .questions-bottom{
+    padding-top: 70px;
     text-align: center;
+}
+
+.questions .questions-bottom h5{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.questions .questions-bottom p{
+    margin-bottom: 15px;
+}
+
+.questions .questions-bottom a{
+    text-decoration: none;
+    padding: 13px 22px;
+    border: solid 1px black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    transition: background-color .4s;
+}
+
+.questions .questions-bottom a:hover{
+    background-color: black;
+    color: white;
 }
 
 .question-body{
     display: none;
+    padding: 20px 0;
 }
 
 .show-text .question-body{

@@ -170,23 +170,33 @@ function populateMenuItems(menuItemsData) {
 
 const filterButtons = document.querySelectorAll('input[name="category"]')
 // let labels = document.querySelectorAll('.label')
+let previousButton = null; //setting active button to null, since none has been clicked yet
 
 filterButtons.forEach((button) => {
     button.addEventListener('change', () => {
+        if (previousButton !== null) {
+            previousButton.parentElement.classList.remove('label-background');
+        }
+
         let category = button.value;
         let filteredItems = menuItemsData.filter(item => item.category === category);
         populateMenuItems(filteredItems);
-    })
 
-   button.addEventListener('click', (e) => {
-    let label = e.currentTarget.parentElement
-    if(button.checked){
-        label.classList.add('label-background')
-    }else{
-        label.classList.remove('label-background')
-    }
-   })
-})
+        if (button.checked) {
+            button.parentElement.classList.add('label-background');
+            previousButton = button;
+        } else {
+            button.parentElement.classList.remove('label-background');
+            previousButton = null;
+        }
+    });
+});
+
+
+
+
+
+
 
 
 

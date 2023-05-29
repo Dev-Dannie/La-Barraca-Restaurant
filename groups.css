@@ -41,7 +41,8 @@
 }
 
 .groups .groups-cards .card1 .card1-flex .content1 h3,
-.groups .groups-cards .card1 .card1-flex .content2 h3{
+.groups .groups-cards .card1 .card1-flex .content2 h3,
+.groups .groups-cards .card2 h3{
     font-size: 2.2rem;
     text-transform: uppercase;
     font-weight: 300;
@@ -50,7 +51,8 @@
 }
 
 .groups .groups-cards .card1 .card1-flex .content1 h6,
-.groups .groups-cards .card1 .card1-flex .content2 h6{
+.groups .groups-cards .card1 .card1-flex .content2 h6,
+.groups .groups-cards .card2 h6{
     font-size: 1rem;
     /* text-transform: uppercase; */
     font-weight: 600;
@@ -59,12 +61,31 @@
 }
 
 .groups .groups-cards .card1 .card1-flex .content1 p,
-.groups .groups-cards .card1 .card1-flex .content2 p{
+.groups .groups-cards .card1 .card1-flex .content2 p,
+.groups .groups-cards .card2 p{
     margin-bottom: 30px;
+}
+
+.groups .groups-cards .card2 a,
+.groups .groups-cards .card1 a{
+    text-decoration: none;
+    padding: 13px 22px;
+    border: solid 1px black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    transition: background-color .4s;
+}
+
+.groups .groups-cards .card2 a:hover,
+.groups .groups-cards .card1 a:hover{
+    background-color: black;
+    color: white;
 }
 
 .groups .groups-cards .card2{
     border: solid 1px black;
     padding: 30px;
-    height: 350px;
+    height: fit-content;
 }
