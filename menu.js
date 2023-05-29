@@ -154,13 +154,13 @@ function populateMenuItems(menuItemsData) {
         const menuItem = document.createElement('div')
         menuItem.classList.add('menu-main-content')
         // menuItem.classList.add(item.category)
-        menuItem.innerHTML = `
-                                <div class="menu-main-content-some">
-                                <div class="menu-main-content-nuevo">
-                                    <p>${item.tag ? item.tag : ''}</p>
-                                    <h4 class="menu-main-content-h4">${item.name}</h4>    
+        menuItem.innerHTML = `<div class="div-block-7">
+                                
+                                <h3 fs-cmsfilter-field="tapasnaam" class="menu-name">${item.name}</h3>
+                                <div class="div-block-13">
+                                    <div class="div-block-8"></div>
+                                    <div class="menu-prijs">${item.digit}</div>
                                 </div>
-                                <span>${item.digit}</span>
                                 </div>
                                 <p>${item.description}</p>`
 
@@ -169,6 +169,7 @@ function populateMenuItems(menuItemsData) {
 };
 
 const filterButtons = document.querySelectorAll('input[name="category"]')
+// let labels = document.querySelectorAll('.label')
 
 filterButtons.forEach((button) => {
     button.addEventListener('change', () => {
@@ -176,9 +177,54 @@ filterButtons.forEach((button) => {
         let filteredItems = menuItemsData.filter(item => item.category === category);
         populateMenuItems(filteredItems);
     })
+
+   button.addEventListener('click', (e) => {
+    let label = e.currentTarget.parentElement
+    if(button.checked){
+        label.classList.add('label-background')
+    }else{
+        label.classList.remove('label-background')
+    }
+   })
 })
+
+
+
 
 window.addEventListener('load', () => {
     populateMenuItems(menuItemsData)
 })
 
+{/* <div class="div-block-7">
+    <div class="text-block-5">NUEVO</div>
+    <h3 fs-cmsfilter-field="tapasnaam" class="menu-naam">Croquetas caseras de paella</h3>
+    <div class="div-block-13">
+        <div class="div-block-8"></div>
+        <div class="menu-prijs">8</div>
+        </div>
+        </div>
+
+<div class="div-block-7">
+    <div class="text-block-5">NUEVO</div>
+    <h3 fs-cmsfilter-field="tapasnaam" class="menu-naam">Croquetas caseras de paella</h3>
+    <div class="div-block-13">
+        <div class="div-block-8"></div>
+        <div class="menu-prijs">8</div>
+    </div>
+    </div> */}
+
+// .div-block-8 {
+//     width: 100%;
+//     height: 1px;
+//     background-color: #000;
+//     flex: 1;
+//     margin-left: 30px;
+//     margin-right: 30px;
+// }
+
+// .div-block-13 {
+//     flex: 1;
+//     justify-content: flex-end;
+//     align-items: center;
+//     display: flex;
+// }
