@@ -89,3 +89,15 @@
     padding: 30px;
     height: fit-content;
 }
+
+
+@media (max-width:768px) {
+    .video-container {
+        height: calc(70vh - 70px);
+    }
+
+    .groups .groups-cards {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
