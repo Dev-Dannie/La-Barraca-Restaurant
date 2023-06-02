@@ -16,6 +16,5 @@ form.addEventListener('submit', (e) => {
 
     const successMessage = document.createElement('div')
     successMessage.textContent = 'Thank you for submitting'
-
-    form.innerHTML = successMessage 
+ 
 })

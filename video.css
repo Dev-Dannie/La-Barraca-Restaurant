@@ -24,6 +24,7 @@
     top: 30%;
     gap: 10px;
     color: #fff;
+    text-align: center;
 }
 
 
@@ -36,6 +37,7 @@
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: bold;
+    font-family: 'Pacifico', cursive;
 }
 
 .video-container .video-content p{
@@ -64,3 +66,16 @@
     background-color: black;
 }
 
+@media (max-width:576px) {
+    .video-container .video-content h1{
+        font-size: 3rem;
+    }
+
+    .video-container .video-content .video-btn{
+        flex-direction: column;
+    }
+
+    .video-container .video-content{
+        padding: 0 10px;
+    }
+}

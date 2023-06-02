@@ -1,7 +1,7 @@
 .menu{
     height: auto;
     padding: var(--section-padding);
-    background-color: rgb(254, 244, 242);
+        background-color: #fffae4;
 }
 
 .menu-header{
@@ -11,6 +11,7 @@
     align-items: center;
    width: 100%;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .menu-header h3{
@@ -23,6 +24,7 @@
     font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
 }
 
 .menu-header p{
@@ -90,7 +92,8 @@
 .menu-main-content h3 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Fontfabric nexa rust sans shadow,sans-serif;
+    /* font-family: Fontfabric nexa rust sans shadow,sans-serif; */
+    font-family: 'Pacifico', cursive;
     font-size: 2.35rem;
     line-height: 1.2;
 }

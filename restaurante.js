@@ -49,3 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
+
+const menuBar = document.querySelector('.menu-bar')
+const navItems = document.querySelector('.navbar .nav nav ul')
+const closeButton = document.querySelector('.close-button')
+
+menuBar.addEventListener('click', () => {
+    navItems.classList.add('display-nav')
+})
+
+closeButton.addEventListener('click', () => {
+    navItems.classList.remove('display-nav')
+})

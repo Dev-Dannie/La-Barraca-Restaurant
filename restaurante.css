@@ -93,10 +93,21 @@ nav ul li a{
     visibility: visible;  
 }
 
+.menu-icons{
+    display: none;
+}
 
 
 .navbar.scrolled ul li a{
     color: black;
+}
+
+.navbar .nav nav ul img{
+    display: none;
+}
+
+.navbar .nav .menu-bar{
+    display: none;
 }
 
 .active{
@@ -205,6 +216,10 @@ nav ul li a{
 .about-page-text h1{
     font-size: 4.5rem;
     margin-bottom: 25px;
+    font-family: 'Pacifico', cursive;
+        /* font-family: "Fontfabric nexa rust script l 01",sans-serif; */
+        font-weight: 700;
+        line-height: 1.2;
 }
 
 .about-page-text h4{
@@ -258,7 +273,7 @@ nav ul li a{
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 991px) {
     :root{
         --section-padding: 40px 20px;
     }
@@ -276,8 +291,69 @@ nav ul li a{
         margin-left: 10px;
     }
 
-    .navbar ul li a{
+    .navbar .nav nav ul img{
+        display: block;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .navbar .nav nav ul li a{
         font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    .nav-links{
+        position: fixed;
+       top: 0;
+       left: -800px;
+       /* left: 0; */
+       height: 100%; 
+       width: 80%;
+       background: #fff;
+       border-radius: 5px;
+       box-shadow: 0 2.5rem 3.8rem rgba(18, 17, 17, 0.1);
+       padding: 1.8rem 0 0 0.8rem;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+        transition: .5s;
+    }
+
+    .display-nav{
+        left: 0;
+    }
+
+    .navbar .nav .menu-bar{
+        display: block;
+        width: 50px;
+    }
+
+    .navbar.scrolled .nav-logo{
+        visibility: hidden;  
+    }
+
+    .menu-icons{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+     .nav-links .menu-icons .close-button{
+        width: 40px;
+    }
+
+    .navbar .nav nav ul li{
+       
+       
+        margin-bottom: 10px;
+        padding: 5px;
+    } 
+
+  
+    .navbar .nav nav ul li a{
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 
     .hero-content{
@@ -292,6 +368,7 @@ nav ul li a{
     .about-page{
         flex-direction: column;
         padding: 40px;
+        justify-content: center;
     }
 
     .about-page-img{
@@ -312,4 +389,12 @@ nav ul li a{
         width: 300px;
         height: 300px;
     }
+}
+
+h {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Fontfabric nexa rust sans shadow,sans-serif;
+    font-size: 4rem;
+    line-height: 1.2;
 }

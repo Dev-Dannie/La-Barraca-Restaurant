@@ -18,6 +18,7 @@
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
 }
 
 .contact-header .para{
@@ -72,6 +73,7 @@ form .form-bio{
     height: 3rem;
     outline: none;
     font-size: 1.2rem;
+    border: solid 1px black;
 }
 
 .selection{
@@ -91,6 +93,7 @@ form .form-bio{
     font-size: 1rem;
     font-weight: bold;
     outline: none;
+    border: solid 1px black;
 }
 
 .message{
@@ -109,6 +112,7 @@ form .form-bio{
     font-weight: bold;
     outline: none;
     margin-bottom: 30px;
+    border: solid 1px black;
 }
 
 form .radio-btn{
@@ -137,6 +141,7 @@ form button{
     font-size: 1.6rem;
     font-weight: bolder;
     text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
 }
 
 .contact-center-div2 .contact-details p{
@@ -149,9 +154,31 @@ form button{
 
 
 
-@media (max-width:768px) {
+@media (max-width:991px) {
     .contact .contact-center {
         flex-direction: column;
         gap: 40px;
+    }
+}
+
+@media (max-width:576px) {
+    .menu .menu-filter .filter-content {
+       text-align: center;
+       gap: 30px;
+        flex-direction: column;
+    }
+
+    form .form-bio {
+        display: block;
+    }
+
+    .footer-details {
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-details .nav ul {
+        flex-direction: column;
     }
 }

@@ -18,6 +18,7 @@
     font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
 }
 
 .questions-header p{
@@ -110,4 +111,10 @@
 
 .show-text .plus-btn{
     display: none;
+}
+
+@media (max-width:576px) {
+    .questions-header h1{
+        font-size: 3rem;
+    }
 }

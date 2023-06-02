@@ -17,6 +17,7 @@
     font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
 }
 
 .groups-header p{
@@ -32,7 +33,7 @@
 .groups .groups-cards .card1{
     border: solid 1px black;
     padding: 30px;
-    height: 500px;
+    height: auto;
 }
 
 .groups .groups-cards .card1 .card1-flex{
@@ -90,14 +91,34 @@
     height: fit-content;
 }
 
+@media (max-width:991px) {
+    .groups .groups-cards .card1 {
+        height: auto;
+    }
+
+    .groups .groups-cards {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
 
 @media (max-width:768px) {
     .video-container {
         height: calc(70vh - 70px);
     }
 
-    .groups .groups-cards {
+    
+
+   
+
+    .groups .groups-cards .card1 .card1-flex {
         flex-direction: column;
-        gap: 50px;
+    }
+}
+
+@media (max-width:576px) {
+    .groups-header h1{
+        font-size: 3rem;
     }
 }
